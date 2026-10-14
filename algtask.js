@@ -19,7 +19,7 @@ function check() {
 
             var result = document.getElementById("result").value;
 
-            var url = "https://noai.duckduckgo.com/?" + "A=" + A + "&B=" + B + "&C=" + C + "&result=" + encodeURIComponent(result);
+            var url = "https://noai.duckduckgo.com/?" + "A=" + A + "&B=" + B + "&C=" + C + "&result=" + result;
 
             window.location.href = url;
         }
