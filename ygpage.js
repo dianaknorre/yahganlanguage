@@ -1,11 +1,8 @@
-let paramString = urlString.split('?')[1];
-let queryString = new URLSearchParams(paramString);
-for (let pair of queryString.entries()) {
-   console.log("Key is: " + pair[0]);
-   console.log("Value is: " + pair[1]);
-}
+var pageid = URLSearchParams.get()
+
 fetch("yagan.json")
     .then(response => response.json())
+
 function displaypage(id) {
     document.getElementById("title").innerhtml = response[id].title;
     document.getElementById("lastname").innerhtml = response[id].author.family;
@@ -17,4 +14,4 @@ function displaypage(id) {
     document.getElementById("url").innerhtml = response[id].URL;
 }
 
-document.addEventListener("DOMContentLoaded", displaypage(pair[1]))
+document.addEventListener("DOMContentLoaded", displaypage(pageid)
