@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+  <head>
+  		<title>Изменяем кириллицу на латиницу по клику</title>
+  		<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="png" href="https://file.garden/ZeYxBho9KEiz9eGo/bookico.png">
+		<meta name="description" content="Изменяем кириллицу на латиницу по клику">
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+  <style>
+
+Body {
+	background-color: #F0F0FF ;
+	color: #15153B ;
+	background-image: url("images/pasport_shablon.png");
+     background-position: left top;
+     background-repeat:  no-repeat;
+        }
+
+.gumvd{
+        margin-left: 100px;
+        margin-top: 67px;
+}
+
+.lastname{
+        margin-left: 185px;
+        margin-top: 250px;
+        }
+
+.firstname{
+        margin-left: 175px;
+        margin-top: 23px;
+        }
+
+.patname{
+        margin-left: 190px;
+        margin-top: 8px;
+        }
+.sex{
+        margin-left: 170px;
+        margin-top: 3px;
+        }
+.bday{
+        margin-left: 260px;
+        margin-top: -20px;
+        }
+.city{
+        margin-left: 190px;
+        margin-top: 3px;
+        }
+
+.img{
+        margin-left: 25px;
+        margin-top: -110px;
+        }
+
+.btn{   color: #F0F0FF;
+        margin-left: 30px;
+        margin-top: 40px;
+        background-color: #22223D;
+        outline: none;
+        }
+.btn:hover{
+	color: #F0F0FF;
+	background-color: #5A5A9C;
+}
+.btn:focus{
+    color: #F0F0FF;
+}
+
+
+.navbar {
+	background-color: #22223D;
+	overflow: hidden;
+        }
+
+.navbar-header a:link {
+	color: #ADADFF;
+        }
+
+.navbar-header a:hover {
+	color: white;
+	background-color: #5A5A9C;
+        }
+
+.item a:link {
+	color: #ADADFF;
+        }
+
+.item a:hover {
+	color: #3030D9;
+        }
+.item a.active {
+   background-color: #C3CFE8;
+      }
+
+
+  </style>
+
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="https://ling.hse.ru/" target="_blank" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+                        <li class="item"> <a href="./forms.html">Формы</a> </li>
+                        <li class="item"> <a href="./tables.html">Таблица</a> </li>
+                        <li class="item"> <a href="./pasdom.html">DOM_JS</a> </li>
+                        <li class="item"> <a href="./pasport.html" class="active">Паспорт</a> </li>
+                        <li class="item"> <a href="./index.html">Навигация</a> </li>
+                        <li class="item"> <a href="./algtask.html">Алг. задача</a> </li>
+						<li class="item"> <a href="https://dianaknorre.github.io" target="_blank">Исполнитель проекта</a> </li>
+				</ul>
+			</div>
+		</nav>
+
+<div class="gumvd">ГУ МВД России по г. Москве</div>
+<div class="lastname">Кнорре</div>
+<div class="firstname">Диана</div>
+<div class="patname">Викторовна</div>
+<div class="sex">жен</div>
+<div class="bday">05.11.2006</div>
+<div class="city">г. Москва</div>
+<div class="img"><a href="images/myphoto.png" target="_blank"><img src="images/myphoto.png" height="150" width="120" title="Я со стрелками и Лупом"></a></div>
+
+<button class="btn" id="change">  Заменить </button>
+
+		  </div>
+	  </div>
+  </body>
+<script src="change.js"></script>
+</html>

@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
   <head>
-  		<title>Каталог яганского языка</title>
+  		<title>Решение алгоритмической задачи</title>
   		<meta charset="utf-8">
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	  	<link rel="icon" type="png" href="https://file.garden/ZeYxBho9KEiz9eGo/bookico.png">
 
-		<meta name="description" content="Каталогизация данных о яганском языке">
+		<meta name="description" content="Решение алгоритмической задачи">
 
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
@@ -41,7 +41,9 @@ Body {
 .main a {
 		color: black
 	}
-
+.item a.active {
+   background-color: #C3CFE8;
+      }
 
   </style>
 
@@ -55,9 +57,12 @@ Body {
 					<a href="https://ling.hse.ru/" target="_blank" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a>
 				</div>
 				<ul class="nav navbar-nav navbar-right">
-                        <li class="item"> <a href="./index.html">Основная страницa</a> </li>
-                        <li class="item"> <a href="./algtask.html">Алг. задача</a> </li>
-						<li class="item"> <a href="https://www.hse.ru/org/persons/190921062" target="_blank">Руководитель проекта</a> </li>
+                        <li class="item"> <a href="./forms.html">Формы</a> </li>
+                        <li class="item"> <a href="./tables.html">Таблица</a> </li>
+                        <li class="item"> <a href="./pasdom.html">DOM_JS</a> </li>
+                        <li class="item"> <a href="./pasport.html">Паспорт</a> </li>
+                        <li class="item"> <a href="./index.html">Навигация</a> </li>
+                        <li class="item"> <a href="./algtask.html" class="active">Алг. задача</a> </li>
 						<li class="item"> <a href="https://dianaknorre.github.io" target="_blank">Исполнитель проекта</a> </li>
 				</ul>
 			</div>
@@ -73,16 +78,16 @@ Body {
 		  <div class="row">
 
 			<h1>Неравенства (Вариант 12)</h1>
+             <p>Выполняются ли неравенства A < B < C или A < B > C ? Если да, то какое из них?</p>
             <label for="inputA">A:</label>
             <input type="number" id="inputA"><br><br>
             <label for="inputB">B:</label>
             <input type="number" id="inputB"><br><br>
             <label for="inputC">C:</label>
             <input type="number" id="inputC"><br><br>
-            <button onclick="checkInequalities()">Проверить неравенства</button><br><br>
-            <p>Результат: </p>
-            <div id="result"></div><br>
-            <button onclick="sendToAddressBar()">Отправить результаты на сервер</button><br><br>
+            <button onclick="check()">Проверить неравенства</button><br><br>
+            Результат: <input id="result" name=result" value="?">
+            <button onclick="send()">Отправить</button><br><br>
 
 		  </div>
 	  </div>

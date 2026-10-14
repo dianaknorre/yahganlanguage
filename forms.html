@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+  <head>
+  		<title>Каталог яганского языка</title>
+  		<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="icon" type="png" href="https://file.garden/ZeYxBho9KEiz9eGo/bookico.png">
+
+		<meta name="description" content="Каталогизация данных о яганском языке">
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+  <style>
+Body {
+	background-color: #F0F0FF ;
+	color: #15153B ;
+      }
+
+.navbar {
+	background-color: #22223D;
+	overflow: hidden;
+        }
+
+.navbar-header a:link {
+	color: #ADADFF;
+        }
+
+.navbar-header a:hover {
+	color: white;
+	background-color: #5A5A9C;
+        }
+
+.item a:link {
+	color: #ADADFF;
+        }
+
+.item a:hover {
+	color: #3030D9;
+        }
+
+.main a {
+		color: black
+	}
+.item a.active {
+   background-color: #C3CFE8;
+      }
+
+  </style>
+
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="https://ling.hse.ru/" target="_blank" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+                        <li class="item"> <a href="./forms.html" class="active">Формы</a> </li>
+                        <li class="item"> <a href="./tables.html">Таблица</a> </li>
+                        <li class="item"> <a href="./pasdom.html">DOM_JS</a> </li>
+                        <li class="item"> <a href="./pasport.html">Паспорт</a> </li>
+                        <li class="item"> <a href="./index.html">Навигация</a> </li>
+                        <li class="item"> <a href="./algtask.html">Алг. задача</a> </li>
+						<li class="item"> <a href="https://dianaknorre.github.io" target="_blank">Исполнитель проекта</a> </li>
+				</ul>
+			</div>
+		</nav>
+
+    <header style="background-color: #7587D1; padding-top:70px;">
+		<h1 style="text-align: center">Формы</h1>
+        <br>
+
+	</header>
+
+	  <div class="container">
+		  <div class="row">
+
+			  <article>
+				  <div class="col-md-6">
+					  <form action="https://noai.duckduckgo.com/?" id="UserEnter" name="UserEnter" target="_blank">
+        <p><br><input type="hidden" name="q" value="search"></p>
+        <p>Фамилия: <input type="Text" name="last_name" size=20 value="Пушкин"></p>
+        <p>Имя: <input type="Text" name="first_name" size=20 value="Александр"></p>
+        <p>Группа: <input type="Number" name="group" size=20 value="13"></p>
+        <p>Телефон: <input type="tel" name="phone" size=20 value="+79777777777"></p>
+        <p>Электронная почта: <input type="email" name="email" size=20 value="example@mail.ru"></p>
+        <p>Дата: <input type="date" name="user_date" value='2024-10-02'></p>
+
+        <p>Название файла: <input type="Техт" name="000_file_name" value="mycontacts.txt" size='30'></p>
+
+        <p> Тип записи в файл:<select name="010_mode">
+                <OPTION value="a">дозаписать</OPTION>
+                <OPTION value="w">очистить и вписать</OPTION>
+            </select></p>
+
+        <input type="hidden" name="function" value="page">
+        <input type="hidden" name="page_id" value="3">
+
+        <p>
+            <input type="Reset" name="Reset" value="Обновить">
+            <input type="Submit" name="submit" value="Отправить">
+        </p>
+
+    </form>
+				  </div>
+			  </article>
+
+			  <article>
+				  <div class="col-md-6">
+					  <form action="https://noai.duckduckgo.com/?" id="UserEnter" name="UserEnter" target="_blank">
+        <p><br>Библиографическая ссылка<input type="hidden" name="q" value="search"></p>
+        <p>Название: <input type="Text" name="title" size=20 value="Грамматика"></p>
+        <p>Фамилия, имя автора: <input type="Text" name="author" size=20 value="Сноу, Джон"></p>
+        <p>Издатель: <input type="Text" name="publisher" size=20 value="Драконы"></p>
+        <p>Место издания: <input type="Text" name="place" size=20 value="Драконье логово"></p>
+        <p>Количество страниц: <input type="Number" name="pages" size=20 value="999"></p>
+        <p>Тип публикации:
+            <input type="Radio" name="itemtype" value="Book" checked>Книга
+            <input type="Radio" name="itemtype" value="Book_section">Секция книги
+            <input type="Radio" name="itemtype" value="Article">Статья
+        </p>
+
+        <p>Содержание:
+            <input type="Checkbox" name="content" value="phonology" checked>Фонология
+            <input type="Checkbox" name="content" value="morphology" checked>Морфология
+            <input type="Checkbox" name="content" value="syntax" checked>Синтаксис
+        </p>
+
+        <p>Мета-язык
+            <select name="languages">
+                <OPTION value="English">Английский</OPTION>
+                <OPTION value="French">Французский</OPTION>
+                <OPTION value="German">Немецкий</OPTION>
+                <OPTION value="Spanish">Испанский</OPTION>
+                <OPTION value="Other">Другое</OPTION>
+            </select>
+        </p>
+
+        <p>Дата публикации: <input type="date" name="publ_date" value='2005-12-11'></p>
+        <p>Пароль: <input type="Password" name="password" size=9 value="80085"></p>
+        <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+        <p>Название файла: <input type="Техт" name="000_file_name" value="coolbook.json" size='30'></p>
+
+        <p> Тип записи в файл:<select name="010_mode">
+                <OPTION value="a">дозаписать</OPTION>
+                <OPTION value="w">очистить и вписать</OPTION>
+            </select></p>
+
+        <input type="hidden" name="function" value="page">
+        <input type="hidden" name="page_id" value="3">
+
+        <p>
+            <input type="Reset" name="Reset" value="Обновить">
+            <input type="Submit" name="submit" value="Отправить">
+        </p>
+
+    </form>
+				  </div>
+			  </article>
+
+		  </div>
+	  </div>
+  </body>
+</html>
