@@ -1,3 +1,4 @@
+urlString = window.location.href
 let paramString = urlString.split('?')[1];
 let queryString = new URLSearchParams(paramString);
 for (let pair of queryString.entries()) {
